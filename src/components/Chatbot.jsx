@@ -121,7 +121,7 @@ function Chatbot() {
 
   return (
     <div className="relative grow flex flex-col gap-6 pt-6">
-      <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+      {/* <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
         <label
           style={{ fontSize: "14px", fontWeight: "500", color: "#4A5568" }}
         >
@@ -146,7 +146,7 @@ function Chatbot() {
           onFocus={(e) => (e.target.style.border = "1px solid #3182CE")}
           onBlur={(e) => (e.target.style.border = "1px solid #CBD5E0")}
         />
-      </div>
+      </div> */}
 
       {messages.length === 0 && (
         <div className="mt-3 font-urbanist text-primary-blue text-xl font-light space-y-2">
