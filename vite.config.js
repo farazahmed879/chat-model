@@ -4,7 +4,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 
-const API_BASE_URL = process.env.VITE_API_BASE_URL || "http://localhost:4891";
+const API_BASE_URL = process.env.VITE_API_BASE_URL || "http://localhost:1234";
 
 export default defineConfig({
   server: {
