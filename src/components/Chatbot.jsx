@@ -146,7 +146,8 @@ function Chatbot() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           // model: "qwen2-1.5b-instruct",
-          model: "gemma-3-4b-it",
+          // model: "gemma-3-4b-it",
+          model: "gemma-3-1b-it",
           messages: [...messages, { role: "user", content: trimmedMessage }].map(({ role, content }) => ({
             role,
             content,
