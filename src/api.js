@@ -16,9 +16,8 @@ async function sendChatMessage(chatId, message) {
   // const res = await fetch(BASE_URL + `/chats/${chatId}`, {
   const res = await fetch("/api/chat", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json" , "Authorization": `Bearer ${'VKTZHQG-ACXM1TA-JYHRQZP-991VYXZ'}`, },
     body: JSON.stringify({ model: "qwen2.5b", messages: message }),
-    stream: false,
   });
   if (!res.ok) {
     console.log("Res", res);

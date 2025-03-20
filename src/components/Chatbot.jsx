@@ -141,13 +141,13 @@ function Chatbot() {
   
     try {
       // Send request to GPT4All
-      const response = await fetch("/api/chat", {
+      const response = await fetch("http://localhost:3001/api/v1/openai/chat/completions", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "Authorization": `Bearer ${'QN08WFN-Z7P4WPJ-Q9D4X2E-BN6GQ9N'}` },
         body: JSON.stringify({
           // model: "qwen2-1.5b-instruct",
-          // model: "gemma-3-4b-it",
-          model: "gemma-3-1b-it",
+          model: "test",
+          // model: "gemma-3-1b-it",
           messages: [...messages, { role: "user", content: trimmedMessage }].map(({ role, content }) => ({
             role,
             content,
